@@ -328,8 +328,10 @@ public class Registries
 			{
 				toolEnum = am.getFallbackToolEnum();
 			}
-			
-			GameRegistry.addRecipe(new ShapedOreRecipe(hammer, hammershape, 's', "stickWood", 'i', hammer.getIngotName()));
+			else
+			{
+				GameRegistry.addRecipe(new ShapedOreRecipe(hammer, hammershape, 's', "stickWood", 'i', hammer.getIngotName()));
+			}
 			
 			hammer.setToolMaterial(toolEnum);
 		}
