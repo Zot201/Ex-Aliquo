@@ -71,7 +71,7 @@ public enum AliquoMaterial {
 						toolMaterial = getPrivateValue(
 								ItemTool.class,
 								(ItemTool) item.getItem(),
-								"toolMaterial");
+								"toolMaterial", "field_77862_b");
 					
 					if (toolMaterial != null)
 						break;
